@@ -21,7 +21,7 @@
       </li>
       <li>
         <a
-          href="https://chat.vuejs.org"
+          href="httHelloWorldps://chat.vuejs.org"
           target="_blank"
         >
           Community Chat
@@ -85,10 +85,10 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your new Starter'
     }
   }
 }
