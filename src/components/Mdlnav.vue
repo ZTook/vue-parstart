@@ -1,14 +1,14 @@
 <template>
   <div class="page-container">
     <md-app>
-      <md-app-toolbar class="md-primary" md-elevation="0">
+      <md-app-toolbar class="md-primary">
         <md-button class="md-icon-button" @click="toggleMenu" v-if="!menuVisible">
           <md-icon>menu</md-icon>
         </md-button>
         <span class="md-title">My Title</span>
       </md-app-toolbar>
 
-      <md-app-drawer :md-active.sync="menuVisible" md-persistent="mini">
+      <md-app-drawer :md-active.sync="menuVisible" md-persistent="full">
         <md-toolbar class="md-transparent" md-elevation="0">
           <span>Navigation</span>
 
@@ -50,14 +50,17 @@
 </template>
 
 <script>
-export default {
-  name: 'Mdlnav',
-  data () {
-    return {
-      msg: 'Welcome to Your new Mdlnav'
+  export default {
+    name: 'PersistentFull',
+    data: () => ({
+      menuVisible: false
+    }),
+    methods: {
+      toggleMenu () {
+        this.menuVisible = !this.menuVisible
+      }
     }
   }
-}
 </script>
 
 <style>
@@ -66,7 +69,6 @@ export default {
     border: 1px solid rgba(#000, .12);
   }
 
-   // Demo purposes only
   .md-drawer {
     width: 230px;
     max-width: calc(100vw - 200px);

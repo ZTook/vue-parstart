@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import Particles from '@/components/Particles'
 import Mdlnav from '@/components/Mdlnav'
+import Douban from '@/components/Douban.vue'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
     {
       path: '/mdlnav',
       component: Mdlnav
+    },
+
+    {
+      path: '/douban',
+      component: Douban
     }
   ]
 })
