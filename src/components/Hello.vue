@@ -4,14 +4,11 @@
     <h1>{{ msg }}</h1>
     <h2>Essential</h2>
     <ul>
-      <li><router-link to="/notes">Click Me and goto Notes</router-link></li>
+      <li><router-link to="/particles">Click Me and goto particles</router-link></li>
       <br>
-      <li><router-link to="/douban">Click Me and Visit Douban</router-link></li>
+      <li><router-link to="/mdlnav">Click Me and Visit mdlnav</router-link></li>
       <br>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
+      <li><md-button @click.native="startHacking">Let's do it</md-button></li>
     </ul>
   </div>
 </template>
