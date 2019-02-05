@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
+import Login from '@/components/Login'
 import Particles from '@/components/Particles'
 import Mdlnav from '@/components/Mdlnav'
 import Douban from '@/components/Douban.vue'
@@ -15,6 +16,12 @@ export default new Router({
       path: '/',
       component: Hello
     },
+
+    {
+      path: '/login',
+      component: Login
+    },
+
 
     {
       path: '/particles',
